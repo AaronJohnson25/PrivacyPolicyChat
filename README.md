@@ -1,7 +1,5 @@
 # PrivacyPolicyChat
 
-- [ ]    Try To Utilise a LLM
-- [ ]    Try to summarize a file
-- [ ]    Create a basic Front End
-- [ ]    Get text from URL
-- [ ]    Have Version 1 of project
+- [ ] Try to make the application Chat based
+- [ ] Make a cleaner website
+- [ ] Fine tune LLM for all edge cases
