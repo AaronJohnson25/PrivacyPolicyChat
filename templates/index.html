@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy Policy Link Submission</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 400px; margin: auto; }
+        label, input, button { display: block; width: 100%; margin-bottom: 15px; }
+        input { padding: 8px; }
+        button { padding: 10px; background: #0078d7; color: #fff; border: none; cursor: pointer; }
+        button:hover { background: #005fa3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Submit Your Privacy Policy Link</h2>
+        <form action="{{ url_for('get_summary') }}" method="post" id="privacyForm">
+            <label for="policyLink">Privacy Policy URL:</label>
+            <input type="url" id="policyLink" name="policyLink" placeholder="https://example.com/privacy" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+</html>

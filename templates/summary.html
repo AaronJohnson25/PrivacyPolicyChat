@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy Policy Summary</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: auto; }
+        h2 { margin-bottom: 20px; }
+        #summary { background: #f9f9f9; padding: 20px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Privacy Policy Summary</h2>
+        <div id="summary"></div>
+        <a href="{{ url_for('index') }}">Back</a>
+    </div>
+    <script>
+        const summaryMarkdown = `{{ summary|safe }}`;
+        document.getElementById('summary').innerHTML = marked.parse(summaryMarkdown);
+    </script>
+</body>
+</html>
